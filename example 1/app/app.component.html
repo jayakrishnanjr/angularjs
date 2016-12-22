@@ -1,0 +1,11 @@
+<h1>{{title}}</h1>
+<h2>{{example.name}} details!</h2>
+<div><label>id: </label>{{example.id}}</div>
+<div>
+  <label>name: </label>
+  <input #box
+  (keyup.enter)="update(box.value)" (blur)="update(box.value)">
+  <p>{{value}}</p>
+</div>
+<button (click)="onClickMe()">Click me!</button>
+{{message}}
